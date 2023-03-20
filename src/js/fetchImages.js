@@ -10,8 +10,6 @@ export default class ImageSearch {
   }
 
   async fetchImages() {
-    // const apiUrl = `https://pixabay.com/api/?key=${this.apiKey}&q=${this.searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&page=${this.page}&per_page=40`;
-
     try {
       const response = await axios.get(`${this.baseUrl}`, {
         params: {
